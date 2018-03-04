@@ -10,6 +10,24 @@ This repo works for any wifi adapter with the Realtek rtl8811au chipset. Just ru
 # sudo make install
 # sudo modprobe rtl8812au
 ```
+After every kernel update run:
+
+```sh
+# make
+# sudo make install
+# sudo modprobe rtl8812au
+```
+
+OR This way should install dkms so installation persists after update:
+
+```sh
+# sudo apt-get install dkms
+# git clone https://github.com/scrivy/rtl8812AU_8821AU_linux.git
+# cd rtl8812AU_8821AU_linux
+# make
+# sudo make install
+# sudo make -f Makefile.dkms install
+```
 
 # rtl8812au
 
